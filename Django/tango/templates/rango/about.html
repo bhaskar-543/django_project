@@ -1,0 +1,28 @@
+{% extends 'rango/base.html' %}
+{% load static %}<!-- New line-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="{% static "js/jquery-2.1.4.js" %}"></script>
+<script src="{% static "js/rango-jquery.js" %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+{% block title_block %}
+     About
+{% endblock %}
+
+ {% block body_block %}
+ 		<h1>rango says ...</h1>
+ 		<div>
+ 			this tutorial is put together by  bhaskar <br />
+               <strong>{{ boldmessage }}</strong><br />
+ 		</div>
+ 	</body>
+ 	<div>
+ 		<button onClick="alert('You clicked the button using Javascript.');">Click Me - I run Javascript
+		</button>
+		<button id="about-btn"> Click Me - I'm Javascript on Speed</button>
+		<div id="msg">Hello</div>
+		<p>This is a example</p>
+		<p>This is another example</p>
+		<a href="{% url 'index' %}">Index</a><br />
+	<img src="{% static "images/rango.jpg" %}"alt="Picture of Rango" /> <!-- New line -->
+</div>
+{% endblock %}
